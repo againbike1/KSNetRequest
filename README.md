@@ -16,7 +16,9 @@
 * target参数目的是用来显示活动指示器
 
 ##实现效果
-
+### 带有缓存，可自定义
+### 无网络提示，可自定义
+### 活动指示器，可自定义
 ![断网下的加载](https://github.com/18301125620/KSNetRequest/blob/master/ImageSource/Untitled.gif)
 
 * 断网下的视图可自定义KSNoNetView 即可实现自己需要的效果.
