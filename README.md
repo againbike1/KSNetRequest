@@ -28,11 +28,10 @@
 KSNetRequest.m在警告处来设置缓存的条件，
 ```Objective-C
 //=====这个判断需要和后台协商，什么情况下请求成功=然后才可以缓寸=========//
-            if ([responseObject[@"result"] isEqualToString:@"0"]) {
-              //  添加缓存
-                [KSCache updateObject:responseObject withURL:URLString parameter:parameters];
-                
-            }
+if ([responseObject[@"result"] isEqualToString:@"0"]) {
+    //  添加缓存
+    [KSCache updateObject:responseObject withURL:URLString parameter:parameters];
+  }
  ```
 ### 无网络提示，可自定义<br>
 自定义 KSNoNetView即可,但是刷新网络按钮必须连接到KSNoNetView.m的- (IBAction)reloadNetworkDataSource:(id)sender里面,具体方法看Demo
