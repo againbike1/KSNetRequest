@@ -21,6 +21,10 @@
 
 ### 带有缓存，可自定义<br>
 自定义方法:KSNetRequest.m 里面 宏定义ISCACHE 设置位NO，可以取消缓存,YES添加缓存（默认是YES）
+```Objective-C
+//====================是不是需要缓存==YES需要==NO不需要====================//
+#define ISCACHE YES
+```
 KSNetRequest.m在警告处来设置缓存的条件，
 ### 无网络提示，可自定义<br>
 自定义 KSNoNetView即可,但是刷新网络按钮必须连接到KSNoNetView.m的- (IBAction)reloadNetworkDataSource:(id)sender里面,具体方法看Demo
