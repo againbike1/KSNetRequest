@@ -19,7 +19,7 @@
 ### 带有缓存，可自定义
 ### 无网络提示，可自定义
 ### 活动指示器，可自定义
-![断网下的加载](http://code.cocoachina.com/uploads/attachments/20151127/128447/05d360bd738d669f061d9684bb7483f8.gif)
+![断网下的加载](https://raw.githubusercontent.com/18301125620/KSNetRequest/master/KSNetRequest/ImageSource/Untitled.gif)
 
 * 断网下的视图可自定义KSNoNetView 即可实现自己需要的效果.
 
