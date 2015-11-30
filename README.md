@@ -17,11 +17,16 @@
 * target参数目的是用来显示活动指示器
 
 ##实现效果
-### 带有缓存，可自定义
-### 无网络提示，可自定义
-### 活动指示器，可自定义
 ![断网下的加载](https://raw.githubusercontent.com/18301125620/KSNetRequest/master/KSNetRequest/ImageSource/Untitled.gif)
 
-* 断网下的视图可自定义KSNoNetView 即可实现自己需要的效果.
+### 带有缓存，可自定义<br>
+自定义方法:KSNetRequest.m 里面 宏定义ISCACHE 设置位NO，可以取消缓存,YES添加缓存（默认是YES）
+KSNetRequest.m在警告处来设置缓存的条件，
+### 无网络提示，可自定义<br>
+自定义 KSNoNetView即可,但是刷新网络按钮必须连接到KSNoNetView.m的- (IBAction)reloadNetworkDataSource:(id)sender里面,具体方法看Demo
+### 活动指示器，可自定义<br>
+在KSNoNetView.m的+ (void)requestProgress:(nonnull NSString*)URLString parameters:(nullable id)parameters success:(requestSuccess)success failure:(requestFailure)failure方法里面，添加指示器即可
+
+* 提示，代码已经集成了网络状态检测功能，不需要用户在其他地方添加Reachability相关等代码
 
 最后感谢AFNetworking提供技术支持.
